@@ -36,5 +36,17 @@ Destruira lo que se halla creado.
 
 -Ejecutaremos el comando "docker build -t nombre_imagen:etiqueta .
 
--Para acceder al contenedor podemos usar el comando "docker rum -d -p 8080:80 nombre_imagen
+Para conectar y ejecutar un contenedor podemos ejecutar uno de los siguientes comandos dependiendo de lo que queramos hacer
+
+-Modo interactivo:
+docker run -it nombre_de_tu_imagen
+
+-Ejecución de comandos específicos:
+docker run nombre_de_tu_imagen comando_a_ejecutar
+
+-Shell en un contenedor en ejecución:
+docker exec -it CONTAINER_ID /bin/bash
+
+-Redirección de puertos:
+docker run -d -p 8080:80 nombre_imagen
 
