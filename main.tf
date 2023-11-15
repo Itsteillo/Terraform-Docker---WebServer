@@ -19,7 +19,7 @@ data "local_file" "html_file" {
 }
 
 resource "aws_instance" "web_server" {
-  ami           = "ami-queVallasAUsar"
+  ami           = "TuAmi"
   instance_type = "t2.micro"
   key_name = "nombredelpardellaves"
   vpc_security_group_ids = ["idDelGrupoDeSeguridad"]
