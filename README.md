@@ -10,11 +10,11 @@ Debes de tener instalados los siguientes programas en tu maquina para que todo f
 -aws cli
 
 
-+Para crear nuestra maquina EC2 en aws debemos tener un par de llaves las cuales le seran asignadas. 
++Para crear nuestra maquina EC2 en aws debemos tener un par de llaves las cuales le seran asignadas y debemos ponerlas en la carpeta del proyecto.
 
 Deberemos tener a mano las credenciales de nuestra cuenta de aws.
 
-En nuestra carpeta home deberemos crear el directoro .aws donde iran los siguientes documentos "config" y "credentials". Su contenido puede ser copiado desde la consola de nuestro laboratorio de aws. 
+En nuestra carpeta raiz deberemos crear el directoro .aws si es que no lo tenemos, donde iran los siguientes documentos "config" y "credentials". Su contenido puede ser copiado desde la consola de nuestro laboratorio de aws. 
 
 Deberemos ejecutar un comando de aws cli que es "aws configure" donde debemos poner nuestra clave de acceso, clave secreta de acceso y la zona en la que nosotros estemos ubicados.
 
@@ -22,15 +22,12 @@ Teniendo los documentos en la carpeta .aws listos y haber ejecutado el comando a
 
      "terraform init"
 
-     "terraform plan"
-Mostrara que se va a crear
+     "terraform plan" Mostrara que se va a crear
 
-     "terraform apply"
-Empezara la construccion
+     "terraform apply" Empezara la construccion
 
-     "terraform destroy"
-Destruira lo que se halla creado. 
-
+     "terraform destroy" Destruira lo que se halla creado.
+ 
 
 +Para crear nuestra imagen de docker haremos lo siguiente:
 
