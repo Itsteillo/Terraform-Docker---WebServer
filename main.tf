@@ -19,9 +19,9 @@ data "local_file" "html_file" {
 }
 
 resource "aws_instance" "web_server" {
-  ami           = "TuAmi"
+  ami           = "IdDeamiaUtilizar"
   instance_type = "t2.micro"
-  key_name = "nombredelpardellaves"
+  key_name = "nombrellavedeseguirdad"
   vpc_security_group_ids = ["idDelGrupoDeSeguridad"]
   associate_public_ip_address = true
   
